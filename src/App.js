@@ -5,15 +5,19 @@ import AOS from 'aos'
 
 import Nav from './components/Nav'
 import About from './components/About'
+import BottomNav from './components/BottomNav'
 
 AOS.init()
 
 function App() {
   return (
+    <div>
+      <Nav />
       <div className='container text-center'>
-        <Nav />
         <About />
       </div>
+      {/* <BottomNav /> */}
+    </div>
   );
 }
 

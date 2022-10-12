@@ -1,36 +1,33 @@
 import './style.css'
-import github from '../../images/github-logo.png'
-import linkedin from '../../images/linkedin-logo.png'
+import nameGif from '../../images/name-gif.gif'
 
 export default function Nav() {
     return(
-        <div className='nav justify-content-between'>
-            <h1>ian <br></br> sieg</h1>
-            <ul className='nav-list'>
-                <li>
-                    <a href='#home'>Home</a>
-                </li>
-                <li>
-                    <a href='#about'>About</a>
-                </li>
-                <li>
-                    <a href='#work'>Work</a>
-                </li>
-                <li>
-                    <a href='#resume'>Resume</a>
-                </li>
-                <li>
-                    <a href='#contact'>Contact</a>
-                </li>
-            </ul>
-            <ul className='link-list'>
-                <li>
-                    <a href='https://github.com/ian-sieg' target='_blank' rel='noreferrer'><img src={github} alt='GitHub logo' /></a>
-                </li>
-                <li>
-                    <a href='https://www.linkedin.com/in/ian-sieg-670675212/' target='_blank' rel='noreferrer'><img src={linkedin} alt='GitHub logo' /></a>
-                </li>
-            </ul>
-        </div>
+        <nav className="navbar navbar-expand-md bg-danger justify-content-between">
+            <div className="container-fluid">
+                <img src={nameGif} className='animated-gif navbar-brand' alt='a gif of Ian Sieg being typed out as if it were on a command line or terminal'></img>
+                <div>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li className="nav-item">
+                                <a className="nav-link" href="#home">Home</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#about">About</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#work">Work</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
     )
 }

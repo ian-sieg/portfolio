@@ -2,8 +2,8 @@
 
 export default function About() {
     return(
-        <div>
+        <section>
             Hi
-        </div>
+        </section>
     )
 }

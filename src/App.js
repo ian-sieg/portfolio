@@ -4,12 +4,16 @@ import './App.css';
 import AOS from 'aos'
 
 import Nav from './components/Nav'
+import About from './components/About'
 
 AOS.init()
 
 function App() {
   return (
-    <Nav />
+      <div className='container text-center'>
+        <Nav />
+        <About />
+      </div>
   );
 }
 

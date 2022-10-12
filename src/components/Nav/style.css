@@ -1,0 +1,23 @@
+ul {
+    list-style: none;
+}
+
+.nav{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: aquamarine;
+    opacity: 80%;
+}
+
+.nav-list {
+
+}
+
+.link-list {
+
+}
+
+img{
+    width: 2rem;
+}

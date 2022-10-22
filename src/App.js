@@ -1,7 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
 import AOS from 'aos'
-import 'semantic-ui-css/semantic.min.css'
 
 import Nav from './components/Nav'
 import About from './components/About'

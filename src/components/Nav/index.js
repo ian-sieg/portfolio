@@ -3,10 +3,23 @@ import React, {Component} from 'react'
 import nameGif from '../../images/name-gif.gif'
 import {Menu, Image} from 'semantic-ui-react'
 
+var prevScroll = window.scrollY
+
+window.onscroll = function() {
+    const curScroll = window.scrollY
+    if(prevScroll > curScroll) {
+        document.getElementById('navbar').style.top='0'
+    } else {
+        document.getElementById('navbar').style.top='-50px'
+    }
+    prevScroll = curScroll
+}
+
 export default class Nav extends Component {
+
     render() {
         return(
-            <Menu className='navbar' fixed='top'>
+            <Menu id='navbar' className='navbar' fixed='top'>
                 <Menu.Item className='nav-icon'>
                     <Image src={nameGif} fluid alt='a gif of Ian Sieg being typed out and deleted as if it were on a command line or terminal'/>
                 </Menu.Item>

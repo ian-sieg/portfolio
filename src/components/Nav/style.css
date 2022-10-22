@@ -1,10 +1,11 @@
 .ui.menu.fixed.navbar {
-    /* border-bottom: none;
+    border-bottom: none;
     box-shadow: none;
-    border-radius: 0%; */
+    border-radius: 0%;
     position: sticky;
-    background-color: red;
-    margin-bottom: 1rem;
+    /* background-color: red; */
+    margin-bottom: 0.5rem;
+    transition: top 0.6s;
 }
 
 /* .ui.menu .item.nav-item:hover {

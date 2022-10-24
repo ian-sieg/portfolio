@@ -3,8 +3,8 @@
     box-shadow: none;
     border-radius: 0%;
     position: sticky;
-    /* background-color: red; */
-    margin-bottom: 0.5rem;
+    background-color: red;
+    /* margin-bottom: 0.5rem; */
     transition: top 0.6s;
 }
 
@@ -18,7 +18,7 @@
 
 .ui.menu .item.nav-item {
     display: inline-block ;
-    padding: 1rem 0rem 0.25rem 0rem;
+    padding: 1rem 0.5rem 0.25rem 0rem;
     margin: 0rem 1rem;
     position: relative ;
 }
@@ -43,4 +43,8 @@
 
 .ui.menu a.item.item.nav-item:hover {
     background: inherit;
+}
+
+.img-pad {
+    padding-left: 0.5rem;
 }

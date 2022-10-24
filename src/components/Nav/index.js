@@ -21,7 +21,7 @@ export default class Nav extends Component {
         return(
             <Menu id='navbar' className='navbar' fixed='top'>
                 <Menu.Item className='nav-icon'>
-                    <Image src={nameGif} fluid alt='a gif of Ian Sieg being typed out and deleted as if it were on a command line or terminal'/>
+                    <Image className='img-pad' src={nameGif} fluid alt='a gif of Ian Sieg being typed out and deleted as if it were on a command line or terminal'/>
                 </Menu.Item>
 
                 <Menu.Menu position='right'>

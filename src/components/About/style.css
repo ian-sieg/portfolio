@@ -1,17 +1,26 @@
-.mobile-about {
-    display: none;
+@media screen and (min-width: 990px){
+    .about-sect {
+        height: 90vh;
+        /* height: 100vh; */
+        display: flex;
+        align-items: center;
+    }
 }
 
-.comp-about {
-    display: initial;
+div .ui.horizontal.segments.segment-group-style {
+    margin: 0;
+    box-shadow: none;
+    border: none;
 }
 
-@media screen and (max-width: 990px) {
-    .mobile-about {
-        display: initial;
-    }
+.ui.horizontal.segments .segment {
+    border-left: none;
+}
 
-    .comp-about {
-        display: none;
-    }
+.ui.segment.segment-style-l {
+    padding: 0;
+}
+
+.ui.segment.segment-style-r {
+    padding: 0 2rem;
 }

@@ -14,7 +14,7 @@ function App() {
   return (
       <div>
         <Nav />
-        <div>
+        <div className='padding-wrapper'>
           <About />
           <Portfolio />
           <Resume />

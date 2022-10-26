@@ -17,20 +17,27 @@ export default function About() {
         return () => window.removeEventListener('resize', updateWidth)
     })
 
+    const langCardComp = `https://github-readme-stats.vercel.app/api/top-langs/?username=ian-sieg&card_width=${width/2}&layout=compact&langs_count=6&title_color=ADEFD1FF&text_color=f5f5f5&icon_color=14b8a6&bg_color=171717&hide_border=true&locale=en&custom_title=Top%20%Languages`
+
+    const langCardMobile = `https://github-readme-stats.vercel.app/api/top-langs/?username=ian-sieg&card_width=${width*0.8}&layout=compact&langs_count=6&title_color=ADEFD1FF&text_color=f5f5f5&icon_color=14b8a6&bg_color=171717&hide_border=true&locale=en&custom_title=Top%20%Languages`
+
     return(
         <section id='about' className='about-sect'>
             {width >= 990 ?
                 <div>
                     <Grid relaxed padded doubling>
-                        <Grid.Row verticalAlign='bottom'>
-                            <Grid.Column width={4}>
+                        <Grid.Row verticalAlign='middle'>
+                            <Grid.Column width={5}>
                                 <Image src={headshot} data-aos='fade-right' data-aos-duration='1000'/>
                             </Grid.Column>
-                            <Grid.Column width={12} data-aos='fade-left' data-aos-duration='1000'>
+                            <Grid.Column width={11} data-aos='fade-left' data-aos-duration='1000'>
                                 <Segment basic vertical>
                                     <p>
-                                        Full stack web application developer and dynamic problem solver with a background in graphic design and communications, administration, and resource development. A quick-study who enjoys working collaboratively to build accessible, secure websites and develop creative solutions to issues. Strong organization and leadership abilities.
+                                        Full stack web application developer and dynamic problem solver with a background in graphic design and communications. A quick-study who enjoys working collaboratively to build accessible, secure websites and develop creative solutions to issues. Strong organization and leadership abilities.
                                     </p>
+                                </Segment>
+                                <Segment basic vertical>
+                                    <a href="https://github.com/ian-sieg" target='_blank' rel='noreferrer'><img src={langCardComp} alt="Ian Sieg's Top Languages" className='lang-card' /></a>
                                 </Segment>
                                 <Segment.Group horizontal className='segment-group-style'>
                                     <Segment vertical className='segment-style-l'>
@@ -74,6 +81,8 @@ export default function About() {
                                 <p>
                                 Full stack web application developer and dynamic problem solver with a background in graphic design and communications, administration, and resource development. A quick-study who enjoys working collaboratively to build accessible, secure websites and develop creative solutions to issues. Strong organization and leadership abilities.
                                 </p>
+                                <br/>
+                                <a href="https://github.com/ian-sieg" target='_blank' rel='noreferrer'><Image src={langCardMobile} alt="Ian Sieg's Top Languages" className='lang-card' /></a>
                             </Grid.Column>
                         </Grid.Row>
                     </Grid>

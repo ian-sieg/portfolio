@@ -55,12 +55,12 @@ input, select {
 
 @media screen and (min-width: 990px) {
     .padding-wrapper {
-        padding: 0 2rem;
+        padding: 0 6rem;
     }
 }
 
 @media screen and (min-width: 1750px) {
     .padding-wrapper {
-        padding: 0 5rem;
+        padding: 0 12rem;
     }
 }

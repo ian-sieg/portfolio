@@ -4,9 +4,14 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import './style.css'
 
+import projArr from '../../assets/projArr'
+import Projects from '../Projects'
+
 export default function Portfolio() {
 
     return(
-        <h1>hi</h1>
+        <section id='portfolio' className='portfolio-sect'>
+            <Projects projArr={projArr} />
+        </section>
     )
 }

@@ -17,7 +17,7 @@ export default function About() {
         return () => window.removeEventListener('resize', updateWidth)
     })
 
-    const langCardComp = `https://github-readme-stats.vercel.app/api/top-langs/?username=ian-sieg&card_width=${width/2}&layout=compact&langs_count=6&title_color=ADEFD1FF&text_color=f5f5f5&icon_color=14b8a6&bg_color=171717&hide_border=true&locale=en&custom_title=Top%20%Languages`
+    const langCardComp = `https://github-readme-stats.vercel.app/api/top-langs/?username=ian-sieg&card_width=${width/2.25}&layout=compact&langs_count=6&title_color=ADEFD1FF&text_color=f5f5f5&icon_color=14b8a6&bg_color=171717&hide_border=true&locale=en&custom_title=Top%20%Languages`
 
     const langCardMobile = `https://github-readme-stats.vercel.app/api/top-langs/?username=ian-sieg&card_width=${width*0.8}&layout=compact&langs_count=6&title_color=ADEFD1FF&text_color=f5f5f5&icon_color=14b8a6&bg_color=171717&hide_border=true&locale=en&custom_title=Top%20%Languages`
 
@@ -30,7 +30,7 @@ export default function About() {
                             <Grid.Column width={5}>
                                 <Image src={headshot} data-aos='fade-right' data-aos-duration='1000'/>
                             </Grid.Column>
-                            <Grid.Column width={11} data-aos='fade-left' data-aos-duration='1000'>
+                            <Grid.Column width={11} data-aos='fade-left' data-aos-duration='1000' floated='right'>
                                 <Segment basic vertical>
                                     <p>
                                         Full stack web application developer and dynamic problem solver with a background in graphic design and communications. A quick-study who enjoys working collaboratively to build accessible, secure websites and develop creative solutions to issues. Strong organization and leadership abilities.

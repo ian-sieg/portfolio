@@ -6,6 +6,14 @@
     }
 } */
 
+a {
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
 .about-sect{
     height: 90vh;
     display: flex;

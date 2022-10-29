@@ -43,7 +43,7 @@ export default function About() {
                                     <Segment vertical className='segment-style-l'>
                                         <hr/>
                                         <h1>contact</h1>
-                                        <p>ianmsieg@gmail.com</p>
+                                        <a href='mailto:ianmsieg@gmail.com'><p>ianmsieg@gmail.com</p></a>
                                     </Segment>
                                     <Segment vertical className='segment-style-r'>
                                         <hr/>

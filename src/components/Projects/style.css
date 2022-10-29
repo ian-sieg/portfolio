@@ -1,0 +1,12 @@
+.test {
+    overflow-y: auto;
+    white-space: nowrap;
+}
+
+.height {
+    height: 100%;
+}
+
+.ui.card.margin {
+    margin: 0rem 10rem;
+}

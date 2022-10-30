@@ -3,7 +3,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import './style.css'
 
-import projArr from '../../assets/projArr'
+import projArr from '../../assets/utils/projArr'
 import Projects from '../Projects'
 
 export default function Portfolio() {

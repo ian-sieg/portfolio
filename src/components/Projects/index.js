@@ -1,5 +1,6 @@
 import React from "react"
-import { useHorizontalScroll } from "../../assets/horizontalScroll"
+import { useHorizontalScroll } from "../../assets/utils/horizontalScroll"
+import Card from 'react-bootstrap/Card'
 
 import './style.css'
 
@@ -9,7 +10,10 @@ export default function Projects (props) {
             <div ref={scrollRef} style={{width: '100%', overflow: 'auto'}}>
                 <div style={{whiteSpace: 'nowrap', display: 'flex', flexDirection: 'row'}}>
                 {props.projArr.map(proj => 
-                    <h1>{proj.title}</h1>
+                    <Card className="text-dark">
+                        <Card.Header>{proj.title}</Card.Header>
+                        <Card.Img src={proj.image} />
+                    </Card>
                 )}
                 </div>
             </div>

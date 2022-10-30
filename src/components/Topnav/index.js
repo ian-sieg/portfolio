@@ -1,7 +1,7 @@
 import './style.css'
 import nameGif from '../../images/name-gif.gif'
 
-import Container from 'react-bootstrap/Container';
+import Image from 'react-bootstrap/Image';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
@@ -21,13 +21,13 @@ window.onscroll = function() {
 export default function Topnav() {
     return(
         <Navbar id='navbar' bg='primary' expand='lg' fixed='top' className='topnav'>
-            <Navbar.Brand><img src={nameGif} alt='test'></img></Navbar.Brand>
+            <Navbar.Brand><Image fluid src={nameGif} alt='a gif of Ian Sieg being typed out and deleted as if it were on a command line or terminal'/></Navbar.Brand>
             <Navbar.Toggle aria-controls='basic-navbar-nav' />
                 <Navbar.Collapse id='basic-navbar-nav' className='justify-content-end'>
                     <Nav>
                         <Nav.Link href='#about'>About</Nav.Link>
                         <Nav.Link href='#portfolio'>Portfolio</Nav.Link>
-                        <Nav.Link href='#contact'>Contact</Nav.Link>
+                        <Nav.Link href='#resume'>Resumé</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
         </Navbar>

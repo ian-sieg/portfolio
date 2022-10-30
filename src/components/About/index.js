@@ -1,6 +1,12 @@
 import React, {useEffect, useState} from 'react'
 import 'aos/dist/aos.css'
 import './style.css'
+import headshot from '../../assets/images/small-headshot.jpg'
+
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Image from 'react-bootstrap/Image'
 
 export default function About() {
     const [width, setWidth] = useState(window.innerWidth)
@@ -20,7 +26,49 @@ export default function About() {
 
     return(
         <section id='about' className='about-sect'>
-        
+            {width >= 992 ?
+                <Row className='grid-align-comp'>
+                    <Col xl='4' lg='5' xs='6'><Image fluid src={headshot}/></Col>
+                    <Col>
+                        <p>Full stack web application developer and dynamic problem solver with a background in graphic design and communications. A quick-study who enjoys working collaboratively to build accessible, secure websites and develop creative solutions to issues. Strong organization and leadership abilities.</p>
+
+                        <a href="https://github.com/ian-sieg" target='_blank' rel='noreferrer'><img src={langCardComp} alt="Ian Sieg's Top Languages" className='lang-card' /></a>
+                        <Row>
+                            <Col>
+                                <hr/>
+                                <b>Contact</b>
+                                <p>ianmsieg@gmail.com</p>
+                            </Col>
+                            <Col>
+                                <hr/>
+                                <b>location</b>
+                                <p>chicago, il</p>
+                            </Col>
+                        </Row>
+                    </Col>
+                </Row> 
+                :
+                <Container>
+                    <Row className='grid-align-mobile'>
+                        <Col s='6'><Image fluid className='mb-3' src={headshot}/></Col>
+                        <Col s='6'>
+                            <hr/>
+                            <b>Contact</b>
+                            <p>ianmsieg@gmail.com</p>
+                            <hr/>
+                            <b>location</b>
+                            <p>chicago, il</p>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <p>Full stack web application developer and dynamic problem solver with a background in graphic design and communications. A quick-study who enjoys working collaboratively to build accessible, secure websites and develop creative solutions to issues. Strong organization and leadership abilities.</p>
+
+                            <a href="https://github.com/ian-sieg" target='_blank' rel='noreferrer'><img src={langCardMobile} alt="Ian Sieg's Top Languages" className='lang-card' /></a>
+                        </Col>
+                    </Row>
+                </Container>
+            }
         </section>
         //     {width >= 990 ?
         //         <div>

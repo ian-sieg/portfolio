@@ -47,9 +47,9 @@ a.nav-link:hover::before {
     right: auto ;
 }
 
-a.nav-link:hover {
+/* a.nav-link:hover {
     background: inherit;
-}
+} */
 
 .img-pad {
     padding-left: 0.5rem;

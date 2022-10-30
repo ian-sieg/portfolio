@@ -6,38 +6,20 @@
     }
 } */
 
-a {
-    color: black;
-}
-
-a:hover {
-    color: black;
-}
-
 .about-sect{
-    height: 90vh;
+    height: 110vh;
     display: flex;
     align-items: center;
 }
 
-div .ui.horizontal.segments.segment-group-style {
-    margin: 0;
-    box-shadow: none;
-    border: none;
-}
-
-.ui.horizontal.segments .segment {
-    border-left: none;
-}
-
-.ui.segment.segment-style-l {
-    padding: 0;
-}
-
-.ui.segment.segment-style-r {
-    padding: 0 2rem;
-}
-
 .lang-card {
     width: 100%;
+}
+
+.grid-align-comp {
+    align-items: center;
+}
+
+.grid-align-mobile {
+    align-items: flex-end;
 }

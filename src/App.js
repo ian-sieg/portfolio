@@ -1,7 +1,7 @@
 import './App.css';
 import AOS from 'aos'
 
-import Nav from './components/Nav'
+import Topnav from './components/Topnav'
 import About from './components/About'
 import Portfolio from './components/Portfolio'
 import Resume from './components/Resume'
@@ -13,7 +13,7 @@ AOS.init()
 function App() {
   return (
       <div>
-        <Nav />
+        <Topnav />
         <div className='padding-wrapper'>
           <About />
           <Portfolio />

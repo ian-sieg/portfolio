@@ -1,5 +1,4 @@
 import React from "react"
-import { Card, Image } from "semantic-ui-react"
 import { useHorizontalScroll } from "../../assets/horizontalScroll"
 
 import './style.css'
@@ -10,12 +9,7 @@ export default function Projects (props) {
             <div ref={scrollRef} style={{width: '100%', overflow: 'auto'}}>
                 <div style={{whiteSpace: 'nowrap', display: 'flex', flexDirection: 'row'}}>
                 {props.projArr.map(proj => 
-                    <Card className="margin">
-                        <Image src={proj.image} />
-                        <Card.Content>
-                            <Card.Header>{proj.title}</Card.Header>
-                        </Card.Content>
-                    </Card>
+                    <h1>{proj.title}</h1>
                 )}
                 </div>
             </div>

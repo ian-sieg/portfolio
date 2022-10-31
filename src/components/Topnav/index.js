@@ -1,5 +1,5 @@
 import './style.css'
-import nameGif from '../../images/name-gif.gif'
+import nameGif from '../../assets/images/name-gif.gif'
 
 import Image from 'react-bootstrap/Image';
 import Nav from 'react-bootstrap/Nav';

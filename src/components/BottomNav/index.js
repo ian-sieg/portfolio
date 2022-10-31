@@ -1,5 +1,5 @@
-import github from '../../images/github-logo.png'
-import linkedin from '../../images/linkedin-logo.png'
+import github from '../../assets/images/github-logo.png'
+import linkedin from '../../assets/images/linkedin-logo.png'
 
 export default function BottomNav() {
     return(

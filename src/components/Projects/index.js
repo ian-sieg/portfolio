@@ -30,7 +30,9 @@ export default function Projects (props) {
                         <Card.ImgOverlay className="card-content invis"  onMouseLeave={mouseExit} >
                             <Card.Body>
                                 <Card.Title className='mb-3'>{proj.title}</Card.Title>
-                                <Card.Text>{proj.info}</Card.Text>
+                                <Card.Text><b>Description:</b> {proj.info}</Card.Text>
+                                <Card.Text><b>Tools:</b> {proj.tools}</Card.Text>
+                                {proj.resp ? <Card.Text><b>Core Responsibilities:</b> {proj.resp}</Card.Text> : null}
                                 <Button href={proj.repo} target='_blank' rel='noreferrer' className="card-btns"><i className="fa-brands fa-github"/></Button>
                                 <Button href={proj.link} target='_blank' rel='noreferrer' className="card-btns"><i className="fa-solid fa-link"/></Button>
                             </Card.Body>

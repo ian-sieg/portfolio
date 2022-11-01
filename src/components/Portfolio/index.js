@@ -10,6 +10,10 @@ export default function Portfolio() {
 
     return(
         <section id='portfolio' className='portfolio-sect'>
+            <div className='section-title'>
+                <h1>portfolio</h1>
+                <hr/>
+            </div>
             <Projects projArr={projArr} />
         </section>
     )

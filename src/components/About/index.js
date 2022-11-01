@@ -26,6 +26,10 @@ export default function About() {
 
     return(
         <section id='about' className='about-sect'>
+            <div className='section-title'>
+                <h1>about</h1>
+                <hr/>
+            </div>
             {width >= 992 ?
                 <Row className='grid-align-comp'>
                     <Col xl='4' lg='5' xs='6'><Image fluid src={headshot}/></Col>

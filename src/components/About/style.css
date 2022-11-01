@@ -23,3 +23,9 @@
 .grid-align-mobile {
     align-items: flex-end;
 }
+
+.section-title {
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 0;
+}

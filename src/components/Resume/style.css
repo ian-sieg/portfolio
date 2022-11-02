@@ -1,5 +1,43 @@
 .resume-sect {
-    height: 90vh;
+    height: 100vh;
     display: flex;
     align-items: center;
+}
+
+.section-title {
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 0;
+}
+
+ul {
+    position: relative;
+}
+
+li {
+    list-style: none;
+    padding-left: 1rem;
+    height: initial;
+    padding-top: -5rem;
+    border-left: 2px solid #35c71b;
+    position: relative;
+}
+
+li h2::before {
+    content: '>';
+    color: #35c71b;
+    position: absolute;
+    left: -.75rem;
+    top: 0;
+    padding-bottom: .25rem;
+    background-color: white;
+}
+
+ul li ul li {
+    list-style: circle;
+    border-left: none;
+}
+
+ul li ul li:first-child{
+    margin-top: -.75rem;
 }

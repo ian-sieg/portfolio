@@ -10,7 +10,7 @@ const projArr = [
         title: 'So Fresh So Green',
         info: 'So Fresh So Green is A Social Networking and E-Commerce App for Plant Lovers. Users can create, like and comment on posts, add plants to their garden, follow other users, list their plants for sale, and purchase plants in the marketplace.',
         tools: 'React, Stripe, Tailwind CSS, Redux, AWS, 3JS (Spline), JWT Authentication, Moment JS, Apollo, GraphQL, MongoDB, Mongoose.',
-        resp: 'MongoDB database design and implementation, Apollo/GraphQL routesetting, newsfeed, post and profile functionality.',
+        resp: 'MongoDB database design and implementation, Apollo/GraphQL routesetting, newsfeed, post and profile functionality/React component setup.',
         image: sofreshsogreen,
         repo: 'https://github.com/So-Fresh-So-Green/so-fresh-so-green',
         link: 'https://so-fresh-so-green-app.herokuapp.com/'

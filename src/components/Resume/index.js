@@ -85,7 +85,7 @@ export default function Resume() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col sm={{span:2, offset:10}}><p><a download='' href='#'>Download full resume</a></p></Col>
+                    <Col sm={{span:2, offset:10}}><p><a download='' href='../../assets/files/ims_resume.pdf'>Download full resume</a></p></Col>
                 </Row>
             </Container>
         </section>

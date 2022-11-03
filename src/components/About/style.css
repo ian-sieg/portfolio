@@ -1,13 +1,11 @@
-/* @media screen and (min-width: 990px){
+@media screen and (max-width: 992px){
     .about-sect {
-        height: 90vh;
-        display: flex;
-        align-items: center;
+        height: initial;
     }
-} */
+}
 
 .about-sect{
-    height: 110vh;
+    height: 100vh;
     display: flex;
     align-items: center;
 }

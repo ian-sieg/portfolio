@@ -26,18 +26,19 @@ export default function About() {
 
     return(
         <section id='about' className='about-sect'>
+            {width >= 992 ?
+            <>
             <div className='section-title'>
                 <h1>about</h1>
                 <hr/>
             </div>
-            {width >= 992 ?
                 <Row className='grid-align-comp'>
-                    <Col xl='4' lg='5' xs='6'><Image fluid src={headshot}/></Col>
+                    <Col xl='4' lg='5' xs='6' data-aos='fade-down' data-aos-duration='1500'><Image fluid src={headshot}/></Col>
                     <Col>
-                        <p>Full stack web application developer and dynamic problem solver with a background in graphic design and communications. A quick-study who enjoys working collaboratively to build accessible, secure websites and develop creative solutions to issues. Strong organization and leadership abilities.</p>
+                        <p data-aos='fade-up' data-aos-duration='1000'>Full stack web application developer and dynamic problem solver with a background in graphic design and communications. A quick-study who enjoys working collaboratively to build accessible, secure websites and develop creative solutions to issues. Strong organization and leadership abilities.</p>
 
-                        <a href="https://github.com/ian-sieg" target='_blank' rel='noreferrer'><img src={langCardComp} alt="Ian Sieg's Top Languages" className='lang-card' /></a>
-                        <Row>
+                        <a href="https://github.com/ian-sieg" target='_blank' rel='noreferrer'><img src={langCardComp} alt="Ian Sieg's Top Languages" className='lang-card' data-aos='fade-up' data-aos-duration='1250' /></a>
+                        <Row data-aos='fade-up' data-aos-duration='1500'>
                             <Col>
                                 <hr/>
                                 <b>Contact</b>
@@ -51,9 +52,14 @@ export default function About() {
                         </Row>
                     </Col>
                 </Row> 
+                </>
                 :
                 <Container>
-                    <Row className='grid-align-mobile'>
+                    <div>
+                        <h1>about</h1>
+                        <hr/>
+                    </div>
+                    <Row className='grid-align-mobile' data-aos='fade-up' data-aos-duration='1000'>
                         <Col s='6'><Image fluid className='mb-3' src={headshot}/></Col>
                         <Col s='6'>
                             <hr/>
@@ -66,79 +72,13 @@ export default function About() {
                     </Row>
                     <Row>
                         <Col>
-                            <p>Full stack web application developer and dynamic problem solver with a background in graphic design and communications. A quick-study who enjoys working collaboratively to build accessible, secure websites and develop creative solutions to issues. Strong organization and leadership abilities.</p>
+                            <p data-aos='fade-up' data-aos-duration='1250'>Full stack web application developer and dynamic problem solver with a background in graphic design and communications. A quick-study who enjoys working collaboratively to build accessible, secure websites and develop creative solutions to issues. Strong organization and leadership abilities.</p>
 
-                            <a href="https://github.com/ian-sieg" target='_blank' rel='noreferrer'><img src={langCardMobile} alt="Ian Sieg's Top Languages" className='lang-card' /></a>
+                            <a href="https://github.com/ian-sieg" target='_blank' rel='noreferrer'><img src={langCardMobile} alt="Ian Sieg's Top Languages" className='lang-card' data-aos='fade-up' data-aos-duration='1500'/></a>
                         </Col>
                     </Row>
                 </Container>
             }
         </section>
-        //     {width >= 990 ?
-        //         <div>
-        //             <Grid relaxed padded doubling>
-        //                 <Grid.Row verticalAlign='middle'>
-        //                     <Grid.Column width={5}>
-        //                         <Image src={headshot} data-aos='fade-right' data-aos-duration='1000'/>
-        //                     </Grid.Column>
-        //                     <Grid.Column width={11} data-aos='fade-left' data-aos-duration='1000' floated='right'>
-        //                         <Segment basic vertical>
-        //                             <p>
-        //                                 Full stack web application developer and dynamic problem solver with a background in graphic design and communications. A quick-study who enjoys working collaboratively to build accessible, secure websites and develop creative solutions to issues. Strong organization and leadership abilities.
-        //                             </p>
-        //                         </Segment>
-        //                         <Segment basic vertical>
-        //                             <a href="https://github.com/ian-sieg" target='_blank' rel='noreferrer'><img src={langCardComp} alt="Ian Sieg's Top Languages" className='lang-card' /></a>
-        //                         </Segment>
-        //                         <Segment.Group horizontal className='segment-group-style'>
-        //                             <Segment vertical className='segment-style-l'>
-        //                                 <hr/>
-        //                                 <h1>contact</h1>
-        //                                 <a href='mailto:ianmsieg@gmail.com'><p>ianmsieg@gmail.com</p></a>
-        //                             </Segment>
-        //                             <Segment vertical className='segment-style-r'>
-        //                                 <hr/>
-        //                                 <h1>location</h1>
-        //                                 <p>chicago, il</p>
-        //                             </Segment>
-        //                         </Segment.Group>
-        //                     </Grid.Column>
-        //                 </Grid.Row>
-        //             </Grid>
-        //         </div> :
-
-        //         <div>
-        //             <Grid relaxed padded>
-        //                 <Grid.Row verticalAlign='bottom'>
-        //                     <Grid.Column mobile={8}>
-        //                         <Image src={headshot} data-aos='fade-right' data-aos-duration='1000'/>
-        //                     </Grid.Column>
-                            
-        //                     <Grid.Column mobile={8}>
-        //                         <Grid.Column data-aos='fade-left' data-aos-duration='1000'>
-        //                                 <hr/>
-        //                                 <h1>contact</h1>
-        //                                 <p>ianmsieg@gmail.com</p>
-        //                             </Grid.Column>
-        //                             <Grid.Column data-aos='fade-left' data-aos-duration='1000'>
-        //                                 <hr/>
-        //                                 <h1>location</h1>
-        //                                 <p>chicago, il</p>
-        //                             </Grid.Column>
-        //                     </Grid.Column>
-        //                 </Grid.Row>
-        //                 <Grid.Row>
-        //                     <Grid.Column data-aos='fade-up' data-aos-duration='1000'>
-        //                         <p>
-        //                         Full stack web application developer and dynamic problem solver with a background in graphic design and communications, administration, and resource development. A quick-study who enjoys working collaboratively to build accessible, secure websites and develop creative solutions to issues. Strong organization and leadership abilities.
-        //                         </p>
-        //                         <br/>
-        //                         <a href="https://github.com/ian-sieg" target='_blank' rel='noreferrer'><Image src={langCardMobile} alt="Ian Sieg's Top Languages" className='lang-card' /></a>
-        //                     </Grid.Column>
-        //                 </Grid.Row>
-        //             </Grid>
-        //         </div>
-        //     }
-        // </section>
     )
 }

@@ -9,3 +9,10 @@
     position: absolute;
     left: 0;
 }
+
+@media screen and (max-width: 992px){
+    .portfolio-sect {
+        height: initial;
+        margin-bottom: 5rem;
+    }
+}

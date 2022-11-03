@@ -1,7 +1,11 @@
-import React from "react"
+import React, {useState, useEffect} from "react"
 import { useHorizontalScroll } from "../../assets/utils/horizontalScroll"
+
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
 import './style.css'
 
@@ -21,8 +25,26 @@ export default function Projects (props) {
         }
     }
 
+    const [width, setWidth] = useState(window.innerWidth)
+
+    const updateWidth = () => {
+        setWidth(window.innerWidth)
+    }
+
+    useEffect(() => {
+        window.addEventListener('resize', updateWidth)
+        return () => window.removeEventListener('resize', updateWidth)
+    })
+
     return(
-            <div ref={scrollRef} className='container-scroll'>
+        <>
+            {width >= 992 ? 
+            <>
+                <div className='section-title'>
+                    <h1>portfolio</h1>
+                    <hr/>
+                </div>
+                <div ref={scrollRef} className='container-scroll'>
                 <div className="row-scroll">
                 {props.projArr.map(proj => 
                     <Card className='card-sizing' key={proj.id}>
@@ -42,28 +64,33 @@ export default function Projects (props) {
                 )}
                 </div>
             </div>
-
-// {/* <Card className="text-dark test">
-// <Card.Header>{proj.title}</Card.Header>
-// <Card.Img src={proj.image} className='imgtest' />
-// </Card> */}
-
-        // <Grid className="test">
-        //     <Grid.Row verticalAlign="middle" columns={5}>
-        //         {props.projArr.map(proj => 
-        //             <Grid.Column className="height margin">
-        //                 <Reveal animated="move right" className="height">
-        //                     <Reveal.Content visible>
-        //                         <Image src={proj.image} />
-        //                     </Reveal.Content>
-        //                     <Reveal.Content hidden>
-        //                         <p>{proj.info}</p>
-        //                     </Reveal.Content>
-        //                 </Reveal>
-        //             </Grid.Column>
-        //         )}
-        //     </Grid.Row>
-        // </Grid>
+            </>
+            :
+            <Container>
+                <div>
+                    <h1>portfolio</h1>
+                    <hr/>
+                </div>
+                {props.projArr.map(proj =>
+                        <Row>
+                            <Col>
+                                <Card className="mobile-proj-card" text="white" key={proj.id} data-aos='fade-up' data-aos-duration='1250'>
+                                    <Card.Img variant="top" src={proj.image} />
+                                    <Card.Body>
+                                        <Card.Title>{proj.title}</Card.Title>
+                                        <Card.Text><b>Description:</b> {proj.info}</Card.Text>
+                                        <Card.Text><b>Tools:</b> {proj.tools}</Card.Text>
+                                        {proj.resp ? <Card.Text><b>Core Responsibilities:</b> {proj.resp}</Card.Text> : null}
+                                        <Button href={proj.repo} target='_blank' rel='noreferrer' className="card-btns" variant="dark"><i className="fa-brands fa-github"/></Button>
+                                <Button href={proj.link} target='_blank' rel='noreferrer' className="card-btns" variant="dark"><i className="fa-solid fa-link"/></Button>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                        </Row>
+                    )}
+            </Container>
+            }
+        </>
     )
 
 }

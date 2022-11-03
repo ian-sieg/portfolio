@@ -8,11 +8,11 @@ import './style.css'
 
 export default function BottomNav() {
     return(
-        <Navbar fixed='bottom'>
-            <div>
-                <a href='https://github.com/ian-sieg' target='_blank' rel='noreferrer'><img src={github} alt='GitHub logo' /></a>
-                <a href='https://www.linkedin.com/in/ian-sieg/' target='_blank' rel='noreferrer'><img src={linkedin} alt='GitHub logo' /></a>
-            </div>
+        <Navbar as='aside' className='bottom-nav'>
+            <a href='https://github.com/ian-sieg' target='_blank' rel='noreferrer' >
+                <img src={github} alt='GitHub logo' className='logo-links'/></a>
+            <a href='https://www.linkedin.com/in/ian-sieg/' target='_blank' rel='noreferrer' >
+                <img src={linkedin} alt='GitHub logo' className='logo-links'/></a>
         </Navbar>
     )
 }

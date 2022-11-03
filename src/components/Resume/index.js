@@ -24,7 +24,8 @@ export default function Resume() {
                         <h1><u>Technical Skills</u></h1>
                         <ul>
                             <li>
-                                <p>JavaScript, ES6, HTML5, CSS3, jQuery, Node.js, React.js, Express.js, Handlebars, MySQL, Sequelize, NoSQL, MongoDB, Mongoose, Postman, Insomnia, RESTful APIs, Bootstrap, GitHub, Git Bash/Terminal</p>
+                                <p>JavaScript, ES6, HTML5, CSS3, React, AWS, Java, Spring Boot, Thymeleafe, Python, Flask,  OOP,  jQuery, Node.js, Express.js, Handlebars, MySQL, Sequelize, MongoDB, Mongoose, RESTful  APIs, GraphQL, Apollo, Bootstrap, Materialize CSS, Tailwind CSS, Semantic UI, Material UI, GitHub,  Git Bash/Terminal
+</p>
                             </li>
                         </ul>
 

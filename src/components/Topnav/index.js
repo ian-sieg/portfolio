@@ -20,7 +20,7 @@ window.onscroll = function() {
 
 export default function Topnav() {
     return(
-        <Navbar id='navbar' bg='primary' expand='lg' fixed='top' className='topnav'>
+        <Navbar id='navbar' bg='inherit' expand='lg' fixed='top' className='topnav'>
             <Navbar.Brand><Image fluid src={nameGif} alt='a gif of Ian Sieg being typed out and deleted as if it were on a command line or terminal'/></Navbar.Brand>
             <Navbar.Toggle aria-controls='basic-navbar-nav' />
                 <Navbar.Collapse id='basic-navbar-nav' className='justify-content-end'>

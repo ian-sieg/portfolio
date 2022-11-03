@@ -1,0 +1,12 @@
+.bottom-nav {
+    display: flex !important;
+    position: sticky;
+    bottom: 0;
+    background-color: aqua;
+    justify-content: right !important;
+}
+
+.logo-links {
+    padding-right: 1rem;
+    height: 2rem;
+}

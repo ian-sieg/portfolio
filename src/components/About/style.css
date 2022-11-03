@@ -1,9 +1,3 @@
-@media screen and (max-width: 992px){
-    .about-sect {
-        height: initial;
-    }
-}
-
 .about-sect{
     height: 100vh;
     display: flex;
@@ -26,4 +20,10 @@
     transform: rotate(-90deg);
     position: absolute;
     left: 0;
+}
+
+@media screen and (max-width: 992px){
+    .about-sect {
+        height: initial;
+    }
 }

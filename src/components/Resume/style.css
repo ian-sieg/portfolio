@@ -24,12 +24,10 @@ li {
 
 li h2::before {
     content: '>';
-    color: #35c71b;
+    color: #2ece12;
     position: absolute;
-    left: -1.5rem;
-    top: 0;
-    padding-bottom: .25rem;
-    background-color: inherit;
+    left: -1.75rem;
+    top: -.1rem;
 }
 
 ul li ul li {
@@ -39,4 +37,17 @@ ul li ul li {
 
 ul li ul li:first-child{
     margin-top: -.75rem;
+}
+
+.offset-dl a {
+    margin-left: 2rem;
+    color: #2ece12;
+    font-weight:600;
+}
+
+@media (min-width: 1400px){
+    .container.ultra-wide {
+        max-width: max-content;
+        margin-left: 1rem;
+    }
 }

@@ -44,7 +44,7 @@ export default function Projects (props) {
                     <h1>portfolio</h1>
                     <hr/>
                 </div>
-                <div ref={scrollRef} className='container-scroll'>
+                <div ref={scrollRef} className='container-scroll' data-aos='fade-left' data-aos-duration='1500'>
                 <div className="row-scroll">
                 {props.projArr.map(proj => 
                     <Card className='card-sizing' key={proj.id}>

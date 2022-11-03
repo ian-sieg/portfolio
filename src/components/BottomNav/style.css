@@ -1,12 +1,17 @@
 .bottom-nav {
     display: flex !important;
-    position: sticky;
+    position: fixed !important;
+    /* width: 100%; */
     bottom: 0;
-    background-color: aqua;
-    justify-content: right !important;
+    right: 0;
+    justify-content: flex-end !important;
+    background: rgba(98, 172, 37, 0.85);
+    padding-top: .75rem !important;
+    padding-left: 1rem !important;
+    border-radius: 5px 0 0 0;
 }
 
 .logo-links {
-    padding-right: 1rem;
+    padding-right: .75rem;
     height: 2rem;
 }

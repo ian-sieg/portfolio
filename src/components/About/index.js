@@ -33,7 +33,7 @@ export default function About() {
                 <hr/>
             </div>
                 <Row className='grid-align-comp'>
-                    <Col xl='4' lg='5' xs='6' data-aos='fade-down' data-aos-duration='1500'><Image fluid src={headshot}/></Col>
+                    <Col xl='4' lg='5' xs='6' data-aos='fade-down' data-aos-duration='1500'><Image fluid rounded src={headshot}/></Col>
                     <Col>
                         <p data-aos='fade-up' data-aos-duration='1000'>Full stack web application developer and dynamic problem solver with a background in graphic design and communications. A quick-study who enjoys working collaboratively to build accessible, secure websites and develop creative solutions to issues. Strong organization and leadership abilities.</p>
 
@@ -60,9 +60,8 @@ export default function About() {
                         <hr/>
                     </div>
                     <Row className='grid-align-mobile' data-aos='fade-up' data-aos-duration='1000'>
-                        <Col s='6'><Image fluid className='mb-3' src={headshot}/></Col>
+                        <Col s='6'><Image fluid rounded className='mb-3' src={headshot}/></Col>
                         <Col s='6'>
-                            <hr/>
                             <b>Contact</b>
                             <p>ianmsieg@gmail.com</p>
                             <hr/>

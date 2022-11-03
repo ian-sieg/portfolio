@@ -1,7 +1,8 @@
 .portfolio-sect {
-    height: 100vh;
+    height: 80vh;
     display: flex;
     align-items: center;
+    margin-bottom: 5rem;
 }
 
 .section-title {
@@ -13,6 +14,5 @@
 @media screen and (max-width: 992px){
     .portfolio-sect {
         height: initial;
-        margin-bottom: 5rem;
     }
 }

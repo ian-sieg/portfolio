@@ -1,28 +1,32 @@
 .navbar {
-    /* border-bottom: none;
-    box-shadow: none;
-    border-radius: 0%;
-    position: sticky;
-    background-color: red;
-    margin-bottom: 0.5rem; */
     transition: top 0.6s;
 }
 
-.navbar-expand-lg .navbar-nav a.nav-link {
+.topnav {
+    background: rgb(77, 96, 63);
+}
+
+.navbar-expand-md .navbar-nav a.nav-link {
     position: relative;
     padding: 0;
     margin: 0rem .75rem;
-
 }
 
 a.nav-link {
-    /* display: inline-block ; */
-    /* padding: 1rem 0rem 0.25rem 0rem; */
-    /* position: relative ; */
+    display: inline-block ;
+    padding: 1rem 0rem 0.25rem 0rem !important;
+    margin-right: 1rem;
+    margin-top: -.8rem;
+    position: relative ;
+    color: white;
 }
 
-.navbar-expand-lg .navbar-nav a.nav-link:last-child {
-    margin-right: 3rem;
+.navbar-nav .nav-link {
+    color: white !important;
+}
+
+a.nav-link.active {
+    color: white;
 }
 
 .navbar-brand img {
@@ -32,12 +36,12 @@ a.nav-link {
 a.nav-link::before {
     content: "" ;
     position: absolute ;
-    top: 1.5rem;
+    /* top: 2.5rem; */
     right: 0 ;
     bottom: 0 ;
     width: 0 ;
     height: 1.5px ;
-    background-color: rgb(0, 255, 0) ;
+    background-color: rgb(255, 255, 255) ;
     transition: width 0.7s ease-out ;
 }
 
@@ -45,12 +49,22 @@ a.nav-link:hover::before {
     width: 100% ;
     left: 0 ;
     right: auto ;
-}
-
-/* a.nav-link:hover {
-    background: inherit;
-} */
+} 
 
 .img-pad {
     padding-left: 0.5rem;
+}
+
+#offcanvasNavbar-expand-sm {
+    background: rgb(12, 27, 0);
+    width: 10rem;
+}
+
+@media (max-width: 576px) {
+    .navbar-brand img {
+        margin-left: initial;
+    }
+    /* a.nav-link:hover::before {
+        width:50%;
+    } */
 }

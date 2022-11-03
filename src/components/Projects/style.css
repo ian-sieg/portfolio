@@ -32,6 +32,17 @@
 .card-btns {
     margin-top: .75rem;
     margin-right: .5rem;
+    margin-top: -.5rem;
+    height: min-content !important;
+    line-height: 0.75;
+    padding-right: 0.5rem !important;
+    padding-left: 0.5rem !important;
+    /* background: none !important;
+    border: none !important; */
+}
+
+.first-btn {
+    margin-left: 1rem;
 }
 
 .mobile-proj-card {

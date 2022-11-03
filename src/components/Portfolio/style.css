@@ -11,8 +11,16 @@
     left: 0;
 }
 
+@media screen and (max-width: 1200px){
+    .portfolio-sect {
+        height: 65vh;
+        margin-bottom: 4rem;
+    }
+}
+
 @media screen and (max-width: 992px){
     .portfolio-sect {
         height: initial;
+        margin-bottom: 4rem;
     }
 }

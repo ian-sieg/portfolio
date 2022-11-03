@@ -20,9 +20,9 @@ export default function About() {
         return () => window.removeEventListener('resize', updateWidth)
     })
 
-    const langCardComp = `https://github-readme-stats.vercel.app/api/top-langs/?username=ian-sieg&card_width=${width/2.25}&layout=compact&langs_count=6&title_color=ADEFD1FF&text_color=f5f5f5&icon_color=14b8a6&bg_color=171717&hide_border=true&locale=en&custom_title=Top%20%Languages`
+    const langCardComp = `https://github-readme-stats.vercel.app/api/top-langs/?username=ian-sieg&card_width=${width/2.25}&layout=compact&langs_count=6&title_color=FFF&text_color=f5f5f5&icon_color=14b8a6&bg_color=0C1B00AA&hide_border=true&locale=en&custom_title=Top%20%Languages`
 
-    const langCardMobile = `https://github-readme-stats.vercel.app/api/top-langs/?username=ian-sieg&card_width=${width*0.8}&layout=compact&langs_count=6&title_color=ADEFD1FF&text_color=f5f5f5&icon_color=14b8a6&bg_color=171717&hide_border=true&locale=en&custom_title=Top%20%Languages`
+    const langCardMobile = `https://github-readme-stats.vercel.app/api/top-langs/?username=ian-sieg&card_width=${width*0.8}&layout=compact&langs_count=6&title_color=FFF&text_color=f5f5f5&icon_color=14b8a6&bg_color=0C1B00AA&hide_border=true&locale=en&custom_title=Top%20%Languages`
 
     return(
         <section id='about' className='about-sect'>

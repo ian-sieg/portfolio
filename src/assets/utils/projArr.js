@@ -23,7 +23,7 @@ const projArr = [
         resp: 'Implementation of Geoapify API, EmailJS functionality, MySQL database layout/implementation, routesetting, UX/UI.',
         image: sightCity,
         repo: 'https://github.com/edanahy22/sightcity-travel-planning',
-        link: 'https://sightcity-travel-planning.herokuapp.com/'
+        link: 'https://sight-city.herokuapp.com/'
     },
     {
         id: 'hb',

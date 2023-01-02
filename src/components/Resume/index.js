@@ -39,7 +39,7 @@ export default function Resume() {
                             <h1><u>Technical Skills</u></h1>
                             <ul>
                                 <li>
-                                    <p>JavaScript, ES6, HTML5, CSS3, React, AWS, Java, Spring Boot, Thymeleafe, Python, Flask,  OOP,  jQuery, Node.js, Express.js, Handlebars, MySQL, Sequelize, MongoDB, Mongoose, RESTful  APIs, GraphQL, Apollo, Bootstrap, Materialize CSS, Tailwind CSS, Semantic UI, Material UI, GitHub,  Git Bash/Terminal</p>
+                                    <p>JavaScript, Python, ES6, HTML5, CSS3, React, Redux, AWS, Object Oriented Programming, jQuery, Node.js, Express.js, Flask, Handlebars, MySQL, Sequelize, SQLAlchemy, MongoDB, Mongoose, RESTful APIs, GraphQL, Apollo, Bootstrap, Materialize CSS, Semantic UI, Material UI, GitHub, inDesign, Illustrator</p>
                                 </li>
                             </ul>
 
@@ -183,7 +183,7 @@ export default function Resume() {
                             </Col>
                         </Row>
                         <Row>
-                            <Col><p className='offset-dl'><a download='' href='../../assets/files/ims_resume.pdf'>Download full resume</a></p></Col>
+                            <Col><p className='offset-dl'><a download='' href='../../assets/files/ian_sieg_resume.pdf'>Download full resume</a></p></Col>
                         </Row>
                     </Container>
                 </Container>}
